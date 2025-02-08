@@ -1,0 +1,321 @@
+#Intro {
+	text-align: center;
+	color: white;
+	font-size: 100px;
+	font-family: monospace;
+	z-index:5;
+	
+}
+#IntroB{
+		background-image: url('Stars.png');
+	  	background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: 100% 100%;
+}
+
+
+#IntroBCabin{
+			background-color:rgb(67 52 85) ;
+		  background-image: url('Cabin in The Woods.png');
+		  background-position: top right;
+	  	background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: 80% 80%;
+}
+
+
+
+#IntroWoods{
+		  background-image: url('https://samwebsterualed2019.wordpress.com/wp-content/uploads/2019/12/sequoiaforest2-1.png');
+	  	background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: 100% 80%;
+}
+
+.glow-text {
+
+    color: white;
+
+    text-shadow: 0 0 40px white; /* Adjust values for glow intensity */
+
+  }
+
+
+
+/* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;*/
+audio{
+	background-color: grey;
+	border: 3px;
+	border-color: white;
+	border-style:solid ;
+}
+
+.ChatBox{
+	text-align: bottom left;
+	background-color: black;
+	height: 110px;
+	/*opacity: 30%;*/
+	padding: 30px 600px;
+	border-radius:20px;
+	position: absolute;
+	bottom: 20px;
+	left: 110px;
+
+	z-index:3;
+	
+	}
+
+
+
+
+.SlowCharacterChat{
+	font-family: Papyrus, cursive;
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	overflow:hidden;
+	animation: Tanim 5s linear forwards;
+}
+
+.CharacterChat{
+	font-family: Papyrus, cursive;
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	overflow:hidden;
+	animation: Tanim 3s linear forwards;
+}
+
+
+.LoadingText { 
+	color:white;
+	width: 20%; 
+	top: 50%; 
+	position: absolute; 
+	left: 40%; 
+	font-family: Papyrus, cursive;
+	font-size: 30px;
+	
+	overflow: hidden; 
+	animation: Tanim 2s linear forwards; 
+} 
+
+			
+@keyframes Tanim { 
+	0% { 
+		width: 0px; 
+		height: 100px; 
+	} 
+
+	
+
+	100% { 
+		width: 500px; 
+		height: 100px} 
+} 
+
+.CharacterPortrait{
+	width: -100px;
+	height:100px;
+	z-index: 5;
+	position: absolute;  
+	left: 290px;bottom: 40px;
+	border: dashed;
+	border-color: white;
+	
+	
+	border-width:10px;;
+
+
+}
+
+
+@keyframes bounce{
+	0%{transform:translateY(0);}
+	50%{transform:translateY(-30px);}
+	100%{transform:translateY(0);}
+}
+
+.bounce{
+	animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes fade{
+	0%{opacity:70%;}
+	100%{opacity:0%;}
+}
+
+@keyframes Move_to_Doug{
+	0%{transform:translateX(0);}
+	100%{transform:translateX(-480px);}
+
+}
+@keyframes Move_to_Doug2{
+	0%{transform:translateX(0);}
+	100%{transform:translateX(-560px);}
+
+}
+
+@keyframes Move_to_Doug3{
+	0%{transform:translateX(0);}
+	100%{transform:translateX(-350px);}
+}
+	
+@keyframes Move_to_Doug4{
+	0%{transform:translateX(0);}
+	100%{transform:translateX(-1000px);}
+}
+
+
+@keyframes Doug_Move{
+	0%{transform:translateX(0);}
+	100%{transform:translateX(440px);}
+}
+
+
+
+
+
+
+.MovingGeorgeOne{
+
+	animation: Move_to_Doug 1s linear forwards;
+}
+
+.MovingGeorgeTwo{
+
+	animation: Move_to_Doug2 1.5s linear forwards;
+}
+
+.MovingGeorgeThree{
+
+	animation: Move_to_Doug3 1.5s linear forwards;
+}
+
+.MovingGeorgeFour{
+	animation: Move_to_Doug4 1.5s linear forwards;
+}
+
+.DougMoves{
+	animation: Doug_Move 1.5s linear forwards;
+	transform:ScaleX(-1);
+}
+
+.fade{
+	animation:fade 2s linear forwards;}
+
+
+
+.fog_movement{
+	position: absolute;
+	width: 100%;
+	height:700px;
+	z-index:-1;
+	opacity: 50%;
+	left:0;
+	top:0;
+	background: url('https://images.pond5.com/fog-flowing-transparent-background-atmospheric-footage-119697947_iconl.jpeg') repeat-x;
+	background-size: 200% auto;
+	background-position: 0 bottom;
+	animation: bottomfog 60s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bottomfog{
+	0%{background-position: -200%bottom}
+	100%{background-position:0%bottom}
+}
+
+
+
+.Ground{
+	position: absolute;
+	width: 100%;
+	height:5%;
+	z-index:8;
+	opacity: 100%;
+	
+	bottom:0%;
+	background: url('GrassFloor.png') repeat-x;
+	background-size: 115% auto;
+	background-position: 0 bottom;
+	animation: MovingGround 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes MovingGround{
+	0%{background-position: +200%bottom}
+	100%{background-position:0%bottom}
+}
+
+/* INTRODUCTION INFORMATION BELOW*/
+
+
+.Button1 {
+            position: absolute;
+            right: 300px;
+            bottom: 85px;
+            z-index: 3;
+            background-color:yellow;
+            border-radius:80%;
+            padding: 10px;
+            transition: background-color;
+
+        }
+
+.Button1:hover{
+
+	background-color:white;
+
+}
+
+
+/*     TRANSITION CS */
+
+.SpinningHeads{
+	position: absolute;
+	width: 100px;
+	height:60px;
+	z-index:-1;
+	opacity: 100%;
+	
+	background: url('https://nukochannel.neocities.org/NukoImg/Sets/RotatingHead/nukoRotatingHeadOnigiri.gif') repeat-x;
+	
+	animation: SPHeads 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	border:solid;
+	border-color:white;
+	border-wdith:3px;
+}
+
+@keyframes SPHeads{
+	0%{background-position: -200%bottom}
+	100%{background-position:0%bottom}
+}
+
+@keyframes fade_in{
+	0%{opacity:0;}
+	100%{opacity:70%;}
+}
+
+
+@keyframes StarsMove{
+	0%{opacity:1;}
+	50%{opacity:0;}
+	100%{opacity:1;}
+}
+
+.Stars{
+	animation: StarsMove 2s infinite ease-in-out;
+
+}
+
+.fade_forwards{
+	animation: fade_in 4s linear forwards;
+
+}
+

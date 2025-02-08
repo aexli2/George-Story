@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<link rel="stylesheet" href="../Once_Upon_A_Web.css">
+
+		
+	</head>
+
+	<body style="background-color: black " id="IntroWoods">
+
+		<div class="fog_movement">
+		</div>
+
+
+	
+
+
+	<img id="George"src="https://nukochannel.neocities.org/NukoImg/Activities/Sports/nukoMarching.gif" alt="George" style="width:50px;height:50px;position:absolute;bottom:230px;right:560px;z-index:-1" class="MovingGeorgeThree">
+
+
+	<img src="Magic_mirror.png" alt="Mirror" style="width:300px;height:200px;position:absolute;bottom:230px;left:350px;z-index:-1; opacity: 70%">
+
+
+
+
+
+
+
+		
+		<img id="photo" src="https://nukochannel.neocities.org/NukoImg/Reactions/Sleepy/nukoDrowsy2.gif", class="CharacterPortrait",class="img-hor">
+
+		<pre id="name" style=" position: absolute; bottom: 60px; left: 160px; z-index: 6;color: white; text-shadow: 0 0 20px white; font-size: 30px;font-family: monospace;"><i><u>????</u></i></pre>
+
+
+
+
+		<div class="ChatBox", id="box">
+		<pre id="chat" class="SlowCharacterChat">A mirror? What's this
+doing here in the forest?</pre> </div>
+
+	
+	<a href="Magic_mirror-2.html">
+	<button id="bar" class="Button1"></button>
+	</a>
+
+
+		<script>
+        document.getElementById("box").style.display = "none";
+        document.getElementById("photo").style.display = "none";
+        document.getElementById("bar").style.display = "none";
+        document.getElementById("name").style.display = "none";
+
+        function showStuff() {
+            document.getElementById("box").style.display = "inline";
+            document.getElementById("photo").style.display = "inline";
+            document.getElementById("bar").style.display = "inline";
+            document.getElementById("name").style.display = "inline";
+        }
+
+        
+        function changeImage() {
+  			document.getElementById('George').src = "https://nukochannel.neocities.org/NukoImg/Reactions/nukoArrogant.gif";}
+
+
+
+        setTimeout(showStuff, 1500);
+        window.onload = function() {
+        setTimeout(changeImage,1500);}
+        
+    	</script>
+
+
+
+
+		
+
+
+	</body>
+
+
+
+</html>
